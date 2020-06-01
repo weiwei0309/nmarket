@@ -62,12 +62,11 @@ class PersonalAccount: UIViewController {
         }
     }
  
-    @IBAction func createAccountDismiss(_ sender: Any) {
+    @IBAction func dismiss(segue:UIStoryboardSegue) {
+    }
+    @IBAction func dismiss2(segue:UIStoryboardSegue) {
     }
     
-    @IBAction func resetPasswordDissmiss(_ sender: Any) {
-    }
-  
     /*
     // MARK: - Navigation
     // In a storyboard-based application, you will often want to do a little preparation before navigation

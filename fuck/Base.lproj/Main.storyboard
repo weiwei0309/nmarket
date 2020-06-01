@@ -47,7 +47,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="cancel"/>
                                 <connections>
-                                    <action selector="loginDismiss:" destination="cdi-8W-amo" eventType="touchUpInside" id="96y-k8-Ga3"/>
+                                    <action selector="dismiss:" destination="cdi-8W-amo" eventType="touchUpInside" id="Jei-uC-oKF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lso-sm-L4j">
@@ -86,7 +86,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7rf-f8-NpT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="cdi-8W-amo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="850" y="117"/>
+            <point key="canvasLocation" x="848.79999999999995" y="116.49175412293854"/>
         </scene>
         <!--Register-->
         <scene sceneID="Qc2-Sq-xfJ">
@@ -120,11 +120,11 @@
                                 <state key="normal" title="register"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNQ-Yt-bWk">
-                                <rect key="frame" x="80" y="291" width="45" height="30"/>
+                                <rect key="frame" x="88" y="291" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="cancel"/>
                                 <connections>
-                                    <action selector="createAccountDismiss:" destination="ur8-i8-F9C" eventType="touchUpInside" id="6sW-VU-Xyt"/>
+                                    <action selector="dismiss:" destination="ur8-i8-F9C" eventType="touchUpInside" id="tVC-9C-51f"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -157,7 +157,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="cancel"/>
                                 <connections>
-                                    <action selector="resetPasswordDissmiss:" destination="XJo-m8-SBV" eventType="touchUpInside" id="ASG-fF-ftS"/>
+                                    <action selector="dismiss2:" destination="XJo-m8-SBV" eventType="touchUpInside" id="6En-Ib-16X"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xX8-4m-l3q">

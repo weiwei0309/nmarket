@@ -25,7 +25,8 @@ class ViewController: UIViewController {
             present(logVC!, animated: true, completion: nil)
         }
     }
-    @IBAction func loginDismiss(_ sender: Any) {
+
+    @IBAction func dismiss(segue:UIStoryboardSegue) {
     }
     
 }

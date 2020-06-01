@@ -17,17 +17,16 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         let userDefaults = UserDefaults.standard
         let isLogined = userDefaults.value(forKey: "isLogined") as? Bool
-        if isLogined != nil && isLogined! {
+        //if isLogined != nil && isLogined! {
             
-        }
-        else{
+        //}
+        //else{
             let logVC = self.storyboard?.instantiateViewController(withIdentifier: "PersonalAccount")
             present(logVC!, animated: true, completion: nil)
-        }
+        //}
     }
 
-    @IBAction func dismiss(segue:UIStoryboardSegue) {
-    }
+    
     
 }
 

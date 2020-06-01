@@ -62,9 +62,12 @@ class PersonalAccount: UIViewController {
         }
     }
  
-    @IBAction func dismiss(segue:UIStoryboardSegue) {
+    @IBAction func dismiss(segue: UIStoryboardSegue) {
+        performSegue(withIdentifier: "dismissWithSegue:", sender: nil)
     }
-    @IBAction func dismiss2(segue:UIStoryboardSegue) {
+    
+    @IBAction func dismiss2(segue: UIStoryboardSegue) {
+        performSegue(withIdentifier: "dismiss2WithSegue:", sender: nil)
     }
     
     /*

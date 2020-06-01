@@ -14,6 +14,15 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6w-IZ-t8W">
+                                <rect key="frame" x="130" y="136" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -42,14 +51,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aUf-8w-FPE">
-                                <rect key="frame" x="87" y="258" width="45" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="cancel"/>
-                                <connections>
-                                    <action selector="dismiss:" destination="cdi-8W-amo" eventType="touchUpInside" id="Jei-uC-oKF"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lso-sm-L4j">
                                 <rect key="frame" x="168" y="258" width="38" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -63,7 +64,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="register"/>
                                 <connections>
-                                    <segue destination="sAe-dE-80h" kind="show" id="YbF-Lq-SQ4"/>
+                                    <segue destination="sAe-dE-80h" kind="show" id="vIL-8T-9FB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E33-FS-90O">
@@ -71,7 +72,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="reset password"/>
                                 <connections>
-                                    <segue destination="Vy5-gH-43W" kind="show" id="iRd-ky-tEK"/>
+                                    <segue destination="Vy5-gH-43W" kind="show" id="OrZ-g7-drZ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -118,13 +119,16 @@
                                 <rect key="frame" x="250" y="291" width="53" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="register"/>
+                                <connections>
+                                    <action selector="createAction:" destination="sAe-dE-80h" eventType="touchUpInside" id="Q8e-zr-IER"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LNQ-Yt-bWk">
                                 <rect key="frame" x="88" y="291" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="cancel"/>
                                 <connections>
-                                    <action selector="dismiss:" destination="ur8-i8-F9C" eventType="touchUpInside" id="tVC-9C-51f"/>
+                                    <action selector="dismiss:" destination="ur8-i8-F9C" eventType="touchUpInside" id="CSs-Uf-qOS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -132,6 +136,12 @@
                         <viewLayoutGuide key="safeArea" id="gN0-DI-zZ7"/>
                     </view>
                     <navigationItem key="navigationItem" id="WOC-fQ-OEE"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="60D-Tv-r2b" id="Oza-eh-3BZ"/>
+                        <outlet property="passwordTextField" destination="FMT-Gp-4pD" id="T6w-vy-hBA"/>
+                        <outlet property="retypepassword" destination="ptU-fC-IlO" id="Jh6-lS-0Ob"/>
+                        <segue destination="cdi-8W-amo" kind="unwind" unwindAction="dismissWithSegue:" id="0kx-F8-RzL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1x-4w-mrt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="ur8-i8-F9C" userLabel="Exit" sceneMemberID="exit"/>
@@ -157,19 +167,26 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="cancel"/>
                                 <connections>
-                                    <action selector="dismiss2:" destination="XJo-m8-SBV" eventType="touchUpInside" id="6En-Ib-16X"/>
+                                    <action selector="dismiss2:" destination="XJo-m8-SBV" eventType="touchUpInside" id="kVS-90-JEb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xX8-4m-l3q">
                                 <rect key="frame" x="207" y="227" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="reset password"/>
+                                <connections>
+                                    <action selector="resetAction:" destination="Vy5-gH-43W" eventType="touchUpInside" id="Mxk-vG-gCF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="c4O-Vp-qXN"/>
                     </view>
                     <navigationItem key="navigationItem" id="QOI-wC-L1F"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="jiL-en-WlC" id="SWZ-SN-vRQ"/>
+                        <segue destination="cdi-8W-amo" kind="unwind" unwindAction="dismiss2WithSegue:" id="gv8-if-fy0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jBC-2n-YM2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="XJo-m8-SBV" userLabel="Exit" sceneMemberID="exit"/>

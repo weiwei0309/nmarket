@@ -15,6 +15,9 @@
 		B07DF02B2484ED0900B3E5F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07DF0292484ED0900B3E5F9 /* LaunchScreen.storyboard */; };
 		B07DF0362484ED0A00B3E5F9 /* fuckTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF0352484ED0A00B3E5F9 /* fuckTests.swift */; };
 		B07DF0412484ED0A00B3E5F9 /* fuckUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF0402484ED0A00B3E5F9 /* fuckUITests.swift */; };
+		B07DF0512484EDE700B3E5F9 /* PersonalAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF0502484EDE700B3E5F9 /* PersonalAccount.swift */; };
+		B07DF0532484EE1200B3E5F9 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF0522484EE1200B3E5F9 /* Register.swift */; };
+		B07DF0552484EE2F00B3E5F9 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF0542484EE2F00B3E5F9 /* ResetPassword.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		B07DF03C2484ED0A00B3E5F9 /* fuckUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fuckUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07DF0402484ED0A00B3E5F9 /* fuckUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fuckUITests.swift; sourceTree = "<group>"; };
 		B07DF0422484ED0A00B3E5F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B07DF0502484EDE700B3E5F9 /* PersonalAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalAccount.swift; sourceTree = "<group>"; };
+		B07DF0522484EE1200B3E5F9 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		B07DF0542484EE2F00B3E5F9 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				B07DF0272484ED0900B3E5F9 /* Assets.xcassets */,
 				B07DF0292484ED0900B3E5F9 /* LaunchScreen.storyboard */,
 				B07DF02C2484ED0A00B3E5F9 /* Info.plist */,
+				B07DF0502484EDE700B3E5F9 /* PersonalAccount.swift */,
+				B07DF0522484EE1200B3E5F9 /* Register.swift */,
+				B07DF0542484EE2F00B3E5F9 /* ResetPassword.swift */,
 			);
 			path = fuck;
 			sourceTree = "<group>";
@@ -259,9 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07DF0552484EE2F00B3E5F9 /* ResetPassword.swift in Sources */,
 				B07DF0232484ED0900B3E5F9 /* ViewController.swift in Sources */,
+				B07DF0512484EDE700B3E5F9 /* PersonalAccount.swift in Sources */,
 				B07DF01F2484ED0900B3E5F9 /* AppDelegate.swift in Sources */,
 				B07DF0212484ED0900B3E5F9 /* SceneDelegate.swift in Sources */,
+				B07DF0532484EE1200B3E5F9 /* Register.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

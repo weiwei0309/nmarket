@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func logout(_ sender: Any) {
+        let userDefaults = UserDefaults.standard
+        _ = userDefaults.value(forKey: "isLogined") as? Bool
+        userDefaults.set(true, forKey: "isLogined")
+        _ = self.storyboard?.instantiateViewController(withIdentifier: "PersonalAccount")
+        // dismiss把畫面砍掉 表示再出現的時候會在viewdidload一次
+        self.dismiss(animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

@@ -85,6 +85,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="OW7-sq-C5r"/>
                     <connections>
+                        <outlet property="listTableView" destination="xfe-ps-oll" id="Bgg-oH-XZE"/>
                         <outlet property="view" destination="xfe-ps-oll" id="kbq-kC-A44"/>
                     </connections>
                 </viewController>

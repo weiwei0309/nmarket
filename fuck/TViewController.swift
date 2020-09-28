@@ -12,6 +12,7 @@ class TViewController: UIViewController,UITableViewDataSource,UITableViewDelegat
     
     var restaurantNames = ["jj","pp"]
 
+    @IBOutlet weak var listTableView: UITableView!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return restaurantNames.count

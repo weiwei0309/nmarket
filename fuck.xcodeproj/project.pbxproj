@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1D9047A9251910CC00798359 /* TViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D9047A8251910CC00798359 /* TViewController.swift */; };
 		1D9047B6251C92F600798359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D9047B4251C92F600798359 /* Main.storyboard */; };
+		B01C74402521D35E00F3BCA6 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C743F2521D35E00F3BCA6 /* HomeModel.swift */; };
+		B01C74422521D41D00F3BCA6 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B01C74412521D41D00F3BCA6 /* LocationModel.swift */; };
 		B07DF01F2484ED0900B3E5F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF01E2484ED0900B3E5F9 /* AppDelegate.swift */; };
 		B07DF0212484ED0900B3E5F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF0202484ED0900B3E5F9 /* SceneDelegate.swift */; };
 		B07DF0232484ED0900B3E5F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DF0222484ED0900B3E5F9 /* ViewController.swift */; };
@@ -41,6 +43,8 @@
 /* Begin PBXFileReference section */
 		1D9047A8251910CC00798359 /* TViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TViewController.swift; sourceTree = "<group>"; };
 		1D9047B5251C92F600798359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B01C743F2521D35E00F3BCA6 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		B01C74412521D41D00F3BCA6 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		B07DF01B2484ED0900B3E5F9 /* fuck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fuck.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B07DF01E2484ED0900B3E5F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B07DF0202484ED0900B3E5F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				B07DF0502484EDE700B3E5F9 /* PersonalAccount.swift */,
 				B07DF0522484EE1200B3E5F9 /* Register.swift */,
 				B07DF0542484EE2F00B3E5F9 /* ResetPassword.swift */,
+				B01C743F2521D35E00F3BCA6 /* HomeModel.swift */,
+				B01C74412521D41D00F3BCA6 /* LocationModel.swift */,
 			);
 			path = fuck;
 			sourceTree = "<group>";
@@ -275,6 +281,8 @@
 				1D9047A9251910CC00798359 /* TViewController.swift in Sources */,
 				B07DF0232484ED0900B3E5F9 /* ViewController.swift in Sources */,
 				B07DF0512484EDE700B3E5F9 /* PersonalAccount.swift in Sources */,
+				B01C74422521D41D00F3BCA6 /* LocationModel.swift in Sources */,
+				B01C74402521D35E00F3BCA6 /* HomeModel.swift in Sources */,
 				B07DF01F2484ED0900B3E5F9 /* AppDelegate.swift in Sources */,
 				B07DF0212484ED0900B3E5F9 /* SceneDelegate.swift in Sources */,
 				B07DF0532484EE1200B3E5F9 /* Register.swift in Sources */,

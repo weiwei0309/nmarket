@@ -1,5 +1,3 @@
-//
-//  ViewController.swift
 //  fuck
 //
 //  Created by Ariel on 2020/6/1.
@@ -8,7 +6,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
+    
+    
+  
 
     @IBAction func logout(_ sender: Any) {
         let userDefaults = UserDefaults.standard
@@ -34,7 +35,5 @@ class ViewController: UIViewController {
         //}
     }
 
-    
-    
 }
 

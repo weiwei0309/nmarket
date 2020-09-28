@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--AR-->
         <scene sceneID="ipD-23-k3E">
             <objects>
                 <viewController id="yBr-Y9-3JI" sceneMemberID="viewController">
@@ -23,14 +23,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Qec-UE-2DI"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="QlJ-f3-mYG"/>
+                    <tabBarItem key="tabBarItem" title="AR" image="camera" catalog="system" selectedImage="camera.fill" id="QlJ-f3-mYG"/>
                     <navigationItem key="navigationItem" id="W0W-40-zsu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uuq-0h-N5V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-156" y="-959.37031484257875"/>
         </scene>
-        <!--Item 1-->
+        <!--Favorites-->
         <scene sceneID="Hx9-7k-Dv5">
             <objects>
                 <viewController id="cNy-uC-GIw" customClass="TViewController" customModule="fuck" customModuleProvider="target" sceneMemberID="viewController">
@@ -83,7 +83,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Gfg-da-XXw"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="OW7-sq-C5r"/>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="heart" catalog="system" selectedImage="heart.fill" id="OW7-sq-C5r"/>
                     <connections>
                         <outlet property="listTableView" destination="xfe-ps-oll" id="Bgg-oH-XZE"/>
                         <outlet property="view" destination="xfe-ps-oll" id="kbq-kC-A44"/>
@@ -96,7 +96,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="5tj-uE-mQv">
             <objects>
-                <tabBarController id="j2F-SP-6Ux" sceneMemberID="viewController">
+                <tabBarController id="j2F-SP-6Ux" customClass="TabBarController" customModule="fuck" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yWX-7R-JYh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -301,4 +301,10 @@
             <point key="canvasLocation" x="1017" y="107"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera" catalog="system" width="64" height="48"/>
+        <image name="camera.fill" catalog="system" width="64" height="48"/>
+        <image name="heart" catalog="system" width="64" height="54"/>
+        <image name="heart.fill" catalog="system" width="64" height="54"/>
+    </resources>
 </document>
